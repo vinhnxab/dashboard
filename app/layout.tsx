@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   useEffect(() => {
-    import ('bootstrap/dist/js/bootstrap.bundle');
+    import ('./lib/bootstrap');
 }, []);
   return (
     <html lang="en">
