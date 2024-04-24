@@ -1,13 +1,19 @@
-import { GlobeAltIcon } from '@heroicons/react/24/outline';
-import { lusitana } from '@/app/ui/fonts';
+import { roboto } from '@/app/ui/fonts';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AcmeLogo() {
   return (
-    <div
-      className={`${lusitana.className} flex flex-row items-center leading-none text-white`}
-    >
-      <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
-      <p className="text-[44px]">Acme</p>
-    </div>
+      <>
+      <Image
+        src="/logo-ct.webp"
+        width={32}
+        height={32}
+        className="navbar-brand-img h-100"
+        alt="Screenshots of the dashboard project showing desktop version"
+      />
+        <span className="ms-1 font-weight-bold text-white fs-5 text-center">Material Design</span>
+        
+      </>
   );
 }
