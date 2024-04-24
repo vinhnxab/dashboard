@@ -21,6 +21,8 @@ export default function SideNav() {
           <NavLinks />
         </ul>
       </div>
+
+      <hr className="horizontal light mt-0" />
     </>
   );
 }
